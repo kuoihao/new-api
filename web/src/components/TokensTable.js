@@ -412,6 +412,7 @@ const TokensTable = () => {
     const mjLink = localStorage.getItem('chat_link2');
     let defaultUrl;
 
+    
     if (chatLink) {
       defaultUrl =
         chatLink + `/#/?settings={"key":"sk-${key}","url":"${serverAddress}"}`;
