@@ -412,7 +412,7 @@ const TokensTable = () => {
     const mjLink = localStorage.getItem('chat_link2');
     let defaultUrl;
 
-    
+
     if (chatLink) {
       defaultUrl =
         chatLink + `/#/?settings={"key":"sk-${key}","url":"${serverAddress}"}`;
@@ -426,7 +426,7 @@ const TokensTable = () => {
         url = `opencat://team/join?domain=${encodedServerAddress}&token=sk-${key}`;
         break;
       case 'lobe':
-        url = `https://lobe-chat-one-bay-47.vercel.app/?settings={"keyVaults":{"openai":{"apiKey":"sk-${key}","baseURL":"${encodedServerAddress}"}}}`;
+        url = `https://lobe-chat-one-bay-47.vercel.app/?settings={"keyVaults":{"openai":{"apiKey":"sk-${key}","baseURL":"${encodedServerAddress}/v1"}}}`;
         break;
       case 'next-mj':
         url =
